@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Green Screen web page</title>
+        <link rel="stylesheet" type="text/css" href="gsw.css">
+    </head>
+    <body id="body2">
+        <script src="gsw.js" type="text/javascript"></script>
+      
+        <h1 style="font-style: italic white;">Try green screen web</h1>
+        <div id="container">
+
+            <canvas id="can">
+
+            </canvas>
+            <canvas id="can2">
+
+            </canvas>
+            
+            <script type="text/javascript" src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+        </div>
+        <p>
+            <input type="file" id="fgimage" value="upload foreground" multiple="false" accept="image/*" onchange="loadForegroundImage()">
+            <input type="file" id="bgimage" value="upload background" multiple="false" accept="image/*" onchange="loadBackgroundImage()">
+        </p>
+            <input type="button" id="cc" value="Create Composite" onclick="doGreenScreen()">
+            <input type="button" id="clcn" value="Clear Canvases" onclick="clearCanvas()">
+
+        
+    </body>
+</html>
